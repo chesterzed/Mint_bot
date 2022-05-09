@@ -1,0 +1,11 @@
+[Unit]
+Description=My bot
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/teleBot/bot.py
+Restart=always 
+
+[Install]
+WantedBy=multi-user.target
